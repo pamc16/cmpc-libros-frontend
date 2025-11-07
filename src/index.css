@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* define tus componentes en la capa components para que @apply vea utilidades */
+@layer components {
+  .input {
+    @apply border rounded px-3 py-2 mt-1 w-full;
+  }
+  .btn {
+    @apply px-4 py-2 rounded border bg-white hover:bg-gray-100;
+  }
+  .btn-primary {
+    @apply px-4 py-2 rounded bg-indigo-600 text-white hover:bg-indigo-700;
+  }
+}
